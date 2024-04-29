@@ -4,6 +4,7 @@ import task.models.BigBox;
 import task.models.MediumBox;
 import task.models.MicroBox;
 import task.models.SmallBox;
+import java.util.List;
 
 public class Generics {
 
@@ -12,13 +13,18 @@ public class Generics {
 
   }
 
-  //TODO: реализуйте Метод для проверки наличия коробки в списке (Producer)
+  //TODO: Сделайте рефакторинг метода так , что бы это метод мог работать не только с BigBox , а еще и с любыми его наследниками
+  //  используйте для этого дженерики
+  public boolean checkBoxInList(List<BigBox> list, BigBox item) {
+    return list.contains(item);
+  }
 
-  //TODO: реализуйте Метод для добавления коробок в список (Consumer)
+  //TODO: Таким же образом реализуйте метод добавления коробок в список при помощи дженериков . Тоесть , этот метод будет принимать
+  // BigBox и его наследников и добавлять в список BigBox и его наследников
 
-  //TODO: реализуйте Метод для печати списка коробок (Producer)
+  //TODO: Так же реализуйте метод который будет проходится по списку с MediumBox и его наследников и выводить на экран содежимое каждого элемента
 
-  //TODO: реализуйте Метод для копирования коробок из одного списка в другой (Producer и Consumer)
+  //TODO: реализуйте Метод для копирования элементов из одного списка с BigBox и его наследников в другой список BigBox и его наследников
 
   private static BigBox generateBigBox() {
     BigBox bigBox = new BigBox();
