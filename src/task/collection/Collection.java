@@ -1,61 +1,90 @@
 package task.collection;
 
+import java.util.List;
+import java.util.Map;
+import java.util.Queue;
+import java.util.Set;
+
 public class Collection {
-    public static void main(String[] args) {
 
+  public int findMaxElement(List<Integer> list) {
+    return 0;
+  }
 
-    }
+  public List<Integer> removeDuplicates(List<Integer> list) {
+    return null;
+  }
 
-    // Реализуйте функциональность согласно описанию
+  public List<Integer> sortDescending(List<Integer> list) {
+    return null;
+  }
 
-    // TODO: Для каждой задачи сгенерируйте самостоятельно коллекции и карты для тестирования своих методов
+  public boolean containsElement(Set<Integer> set, int element) {
+    return false;
+  }
 
-    // TODO: Найти наибольший элемент в списке.
+  public Set<Integer> findIntersection(Set<Integer> set1, Set<Integer> set2) {
+    return null;
+  }
 
-    // TODO: Удалить все дубликаты из списка.
+  public Set<Integer> removeCommonElements(Set<Integer> set1, Set<Integer> set2) {
+    return null;
+  }
 
-    // TODO: Отсортировать список в порядке убывания.
+  public boolean containsKey(Map<String, Integer> map, String key) {
+    return false;
+  }
 
-    // TODO: Проверить, содержит ли множество определенный элемент.
+  public List<Integer> getValuesByKey(Map<String, List<Integer>> map, String key) {
+    return null;
+  }
 
-    // TODO: Найти пересечение двух множеств.
+  public void removeEntriesByValue(Map<String, Integer> map, int value) {
+  }
 
-    // TODO: Удалить все элементы из множества, которые также содержатся в другом множестве.
+  public void addToQueue(Queue<Integer> queue, int element) {
+  }
 
-    // TODO: Проверить, содержит ли карта определенный ключ.
+  public Integer pollFromQueue(Queue<Integer> queue) {
+    return null;
+  }
 
-    // TODO: Получить все значения, связанные с определенным ключом.
+  public boolean isQueueEmpty(Queue<Integer> queue) {
+    return false;
+  }
 
-    // TODO: Удалить все записи из карты, у которых значение равно определенному значению.
+  public void printOrdersWithMaxAmount(List<Order> orders) {
+  }
 
-    // TODO: Добавить элемент в очередь.
+  public int getTotalAmountOfOrders(List<Order> orders) {
+    return 0;
+  }
 
-    // TODO: Получить и удалить первый элемент из очереди.
+  public void printIncompleteTasks(List<Task> tasks) {
+  }
 
-    // TODO: Проверить, пуста ли очередь.
+  public List<Task> getTasksByTitle(List<Task> tasks, String title) {
+    return null;
+  }
 
-    // TODO: Учет заказов:
-    //  Создайте класс Order с полями id(int), customer(string) и totalAmount(int).
-    //  Создайте метод, который будет принимать список заказов и выводить заказы с наибольшей суммой.
-    //  Создайте метод, который будет принимать список заказов и возвращать общую сумму всех заказов.
+  public void printStudents(List<Student> students) {
+  }
 
-    // TODO: Управление задачами:
-    //  Создайте класс Task с полями id(int), title(string) и isCompleted(boolean).
-    //  Создайте метод, который будет принимать список задач и выводить только незавершенные задачи на экран.
-    //  Создайте метод, который будет принимать список задач и возвращать список задач с определенным заголовком.
+  public List<Student> getStudentsOlderThan(List<Student> students, int age) {
+    return null;
+  }
 
-    // TODO: Создание списка студентов:
-    //  Создайте класс Student с полями name(string) и age(int).
-    //  Создайте метод, который будет принимать список студентов и выводить их на экран.
-    //  Создайте метод, который будет принимать список студентов и возвращать список студентов, у которых возраст больше определенного значения.
+  public void printProductsWithZeroQuantity(List<Product> products) {
+  }
 
-    // TODO: Учет товаров на складе:
-    //  Создайте класс Product с полями id(int), name(string) и quantity(int).
-    //  Создайте метод, который будет принимать список товаров и выводить только товары с нулевым количеством на складе.
-    //  Создайте метод, который будет принимать список товаров и возвращать общее количество товаров на складе.
+  public int getTotalQuantityOfProducts(List<Product> products) {
+    return 0;
+  }
 
-    // TODO: Учет посещаемости:
-    //  Создайте класс Student с полями name(string) и attendance(string).
-    //  Создайте метод, который будет принимать список студентов и выводить студентов с наихудшей посещаемостью.
-    //  Создайте метод, который будет принимать список студентов и возвращать среднюю посещаемость.
+  public void printStudentsWithWorstAttendance(List<AttendanceStudent> students) {
+  }
+
+  public double getAverageAttendance(List<AttendanceStudent> students) {
+    return 0;
+  }
 }
