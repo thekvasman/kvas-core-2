@@ -1,6 +1,8 @@
 package task.collection;
 
-public class Task {
+import java.util.Objects;
+
+public class Task{
 
     private int id;
     private String title;
@@ -22,5 +24,16 @@ public class Task {
 
     public String getTitle() {
         return title;
+    }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Task task = (Task) o;
+        return Objects.equals(title, task.getTitle());
+    }
+    @Override
+    public int hashCode() {
+        return Objects.hash(title);
     }
 }

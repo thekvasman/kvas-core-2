@@ -124,9 +124,13 @@ public class Collection {
     }
 
     public List<Student> getStudentsOlderThan(List<Student> students, int age) {
-        List<Student> list = new ArrayList<>(List.copyOf(students));
-        list.removeIf(s -> s.getAge() <= age);
-        return list;
+        List<Student> studentsOlderThan = new ArrayList<>();
+        for (Student student : students){
+            if (age < student.getAge()){
+                studentsOlderThan.add(student);
+            }
+        }
+        return studentsOlderThan;
     }
 
     public void printProductsWithZeroQuantity(List<Product> products) {
