@@ -2,8 +2,19 @@ package task.collection;
 
 public class AttendanceStudent {
 
-  public AttendanceStudent(String name, String attendance) {
+    private String name;
+    private String attendance;
 
-  }
+    public AttendanceStudent(String name, String attendance) {
+        this.name = name;
+        this.attendance = attendance;
+    }
 
+    public String getName() {
+        return name;
+    }
+
+    public String getAttendance() {
+        return attendance;
+    }
 }
