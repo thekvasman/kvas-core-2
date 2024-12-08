@@ -26,14 +26,18 @@ public class Generics {
     }
 
     public static <T> List<T> getUniqueElements(List<T> list) {
+        if (!list.isEmpty()) {
+            List<T> list2 = new ArrayList<>();
 
-        List<T> list2 = new ArrayList<>();
-
-        for (T t : list) {
-            if (!list2.contains(t)) {
-                list2.add(t);
+            for (T t : list) {
+                if (!list2.contains(t)) {
+                    list2.add(t);
+                }
             }
+            return list2;
+        } else {
+            throw new IllegalArgumentException();
         }
-        return list2;
+
     }
 }
